@@ -1,0 +1,2 @@
+Create a nav with a soft color background AND every list item has a color 
+and then create a section with background image

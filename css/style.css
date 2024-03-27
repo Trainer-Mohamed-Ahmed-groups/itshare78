@@ -1,55 +1,86 @@
-/* 
-1- color
-2- bg color
-3- font size
-4- font family
-5- font weight
-6- height
-7- width
-*/
-:root {
-    font-family: "Poppins", sans-serif;
-}
-
 body {
-    height: 4000px;
+    height: 5000px;
 }
 
 * {
     box-sizing: border-box;
 }
 
-#myId {
-    color: aqua;
-    font-size: 16px;
+fieldset {
+    border-radius: 30px;
 }
 
-.myClass {
-    color: blue;
-    background-color: rgb(40, 156, 219);
-    height: 200px;
-    width: 200px;
+input {
+    border: none;
+}
+
+input.username {
+    color: #F00;
     font-weight: bold;
 }
 
-div {
+input.username,
+input.userPassword {
+    border-bottom: 5px solid #17bfc5;
+}
+
+select {
+    border-radius: 5px;
+    background-color: #0fa2a9;
+}
+
+.submit {
+    width: 120px;
+    height: 40px;
+    background-color: #c1a7b0;
+    color: #f8b703;
+    font-weight: bold;
+}
+
+.parent>.child {
+    font-weight: bold;
     color: red;
 }
 
-section.space {
-    height: 150px;
-    width: 150px;
-    background-color: #888;
-    /* padding: 10px 20px 30px 40px; */
-    padding: 20px;
-    border: 5px solid #080;
-    margin: 20px;
-    border-right: 10px dotted #00F;
+.bg_explain {
+    background-image: url(../images/nature-sm.jpg);
+    height: 600px;
+    width: 600px;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    /* background: url(../images/nature.jpg) no-repeat ; */
 }
 
-.radius {
-    height: 100px;
-    width: 100px;
-    background-color: #19d056;
-    border-radius: 50%;
+.gradient_explain {
+    height: 600px;
+    width: 600px;
+    /* background-image: linear-gradient(#F00, #00F); */
+    /* background-image: repeating-linear-gradient(#F00, #00F 50%); */
+    /* background-image: radial-gradient(#F00, #00F); */
+    background-image: repeating-radial-gradient(#F00, #00F 50%);
+}
+
+.items_parent {
+    background-color: #29ad07;
+    /* height: 100px; */
+}
+
+.items_parent .item {
+    height: 40px;
+    width: 120px;
+    background-color: #EEE;
+    border: 1px solid #999;
+    margin: 20px;
+    float: left;
+}
+
+.items_parent::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear {
+    clear: both;
 }

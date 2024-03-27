@@ -31,15 +31,50 @@
 </head>
 
 <body>
-    <div>This is division</div>
-    <div class="myClass">This is division</div>
-    <div id="myId" class="myClass">This is division</div>
-    <div>This is division</div>
+    <form>
+        <fieldset>
+            <legend>CSS task session two</legend>
+            <input type="text" required class="username" autofocus placeholder="Enter your name">
+            <br><br>
+            <input type="password" class="userPassword" placeholder="Enter tour password">
+            <br><br>
+            <textarea maxlength="20" cols="30" rows="10" placeholder="Enter yout message"></textarea>
+            <br><br>
+            <select name="courses">
+                <optgroup label="Frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option value="php">PHP</option>
+                    <option value="laravel">LARAVEL</option>
+                </optgroup>
+            </select>
+            <input type="submit" class="submit" value="OK">
+        </fieldset>
+
+        <div class="parent">
+            <div class="child">OK child in parent</div>
+        </div>
+        
+        <div class="child">OK child </div>
+    </form>
 
     <hr>
-    <section class="space">I am space</section>
+    <div class="bg_explain"></div>
 
-    <div class="radius"></div>
+    <div class="gradient_explain"></div>
+
+
+    <hr>
+    <div class="items_parent">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <p>This is P</p>
 </body>
 
 </html>
